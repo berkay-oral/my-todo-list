@@ -1,0 +1,55 @@
+ul{
+    list-style-type: none;
+   padding: 0;
+}
+
+li{
+color:  rgb(38, 64, 121);
+max-width: 250px;
+margin: 8px auto;
+position: relative;
+overflow: hidden;
+}
+
+.deleteButton{
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 0.2rem 1rem;
+    border-radius: 25px;
+    margin-bottom: 1rem;
+}
+i{
+    position: absolute;
+    top: 3.5px;
+    right: 0;
+    display: block;
+    transition: all .7s ease-out;
+    cursor: pointer;
+  
+}
+
+i:nth-child(2){
+    margin-top: 20px;
+    opacity: 0;
+    color: red;
+}
+
+i:nth-child(1){
+    color: rgb(119, 182, 24);
+}
+
+
+li:hover i{
+     top: -17px;
+
+}
+
+li:hover i:nth-child(1){
+    opacity: 0;
+}
+
+li:hover i:nth-child(2){
+    opacity: 1;
+    
+} 
